@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    tools:context=".CalcActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple Calculator"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/number1_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter first number"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/number2_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter second number"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button android:id="@+id/add_button" style="@style/Widget.AppCompat.Button.Colored" android:layout_width="60dp" android:layout_height="60dp" android:text="+" android:textSize="24sp" android:layout_margin="8dp"/>
+        <Button android:id="@+id/subtract_button" style="@style/Widget.AppCompat.Button.Colored" android:layout_width="60dp" android:layout_height="60dp" android:text="-" android:textSize="24sp" android:layout_margin="8dp"/>
+        <Button android:id="@+id/multiply_button" style="@style/Widget.AppCompat.Button.Colored" android:layout_width="60dp" android:layout_height="60dp" android:text="*" android:textSize="24sp" android:layout_margin="8dp"/>
+        <Button android:id="@+id/divide_button" style="@style/Widget.AppCompat.Button.Colored" android:layout_width="60dp" android:layout_height="60dp" android:text="/" android:textSize="24sp" android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result: 0"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Login"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>
