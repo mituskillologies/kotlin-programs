@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your food items:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_tea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tea - Rs. 10" />
+
+    <CheckBox
+        android:id="@+id/checkbox_vadapav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vadapav - Rs. 15" />
+
+    <CheckBox
+        android:id="@+id/checkbox_misal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Misal Pav - Rs. 50" />
+
+    <CheckBox
+        android:id="@+id/checkbox_coffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coffee - Rs. 20" />
+
+    <CheckBox
+        android:id="@+id/checkbox_pohe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pohe - Rs. 30" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Calculate Bill" />
+
+</LinearLayout>
